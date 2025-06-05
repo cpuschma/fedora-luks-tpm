@@ -8,9 +8,8 @@ curl -O -J https://raw.githubusercontent.com/cpuschma/fedora-luks-tpm/refs/heads
 chmod u+x ./tpm.sh
 sudo ./tpm.sh
 ```
-
-> [!NOTE]  
-> You may edit [any configuration](https://github.com/cpuschma/fedora-luks-tpm/blob/82ca8bfee330ba0fdfc38a2d18b6b5bdfdbe63c7/tpm.sh#L82), like the used PCRs or PIN requirement in the main function. 
+ 
+ You may edit [any configuration](https://github.com/cpuschma/fedora-luks-tpm/blob/82ca8bfee330ba0fdfc38a2d18b6b5bdfdbe63c7/tpm.sh#L82), like the used PCRs or PIN requirement in the main function. 
 
 ## Demo
 https://github.com/user-attachments/assets/4d455c6e-dd8a-4910-a77d-951b39e6af55
