@@ -9,6 +9,9 @@ chmod u+x ./tpm.sh
 sudo ./tpm.sh
 ```
 
+> [!NOTE]  
+> You may edit [any configuration](https://github.com/cpuschma/fedora-luks-tpm/blob/82ca8bfee330ba0fdfc38a2d18b6b5bdfdbe63c7/tpm.sh#L82), like the used PCRs or PIN requirement in the main function. 
+
 ## Demo
 https://github.com/user-attachments/assets/4d455c6e-dd8a-4910-a77d-951b39e6af55
 
@@ -28,7 +31,8 @@ https://github.com/user-attachments/assets/4d455c6e-dd8a-4910-a77d-951b39e6af55
 
 If the chip refuses to decrypt — for example, if a PCR register has changed, such as Secure Boot, or if the chip is broken — then a password prompt is offered as a fallback option, or a key file is requested (depending on your setup).
 
-**Important**: Keep your password or your keyfile save, even if the TPM is set up, just as you should keep the BitLocker recovery key in Microsoft Windows.
+> [!CAUTION]
+> Keep your password or your keyfile save, even if the TPM is set up, just as you should keep the BitLocker recovery key in Microsoft Windows.
 
 ### What does this script do?
 - If not otherwise defined, find a suitable LUKS partition and TPM device
